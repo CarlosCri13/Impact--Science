@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Impact Science</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header píldora -->
+  <header class="header-wrap --pinned" role="banner">
+    <div class="pill">
+      <div class="logo">
+        <img src="logo.png" alt="CAICTI">
+      </div>
+
+      <nav class="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Impact Science</a></li>
+          <li><a href="#">Programa</a></li>
+          <li><a href="#">Conferencias</a></li>
+          <li><a href="#">Destino Ingeniería</a></li>
+          <li><a href="#">Guía de Autores</a></li>
+        </ul>
+      </nav>
+
+      <div class="cta">
+        <a href="#">Inscríbete</a>
+      </div>
+
+      <!-- Botón hamburguesa (móvil) -->
+      <button class="hamburger" id="hamburger"
+        aria-label="Abrir menú" aria-controls="mobile-drawer" aria-expanded="false">
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+
+  
+
+  <!-- Overlay + Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay" hidden></div>
+
+  <aside class="drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-title">Menú</span>
+      <button class="hamburger" id="closeDrawer" aria-label="Cerrar menú" aria-expanded="true">
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav class="drawer-nav" aria-label="Navegación móvil">
+      <a href="#">Inicio</a>
+      <a href="#">Impact Science</a>
+      <a href="#">Programa</a>
+      <a href="#">Conferencias</a>
+      <a href="#">Destino Ingeniería</a>
+      <a href="#">Guía de Autores</a>
+    </nav>
+    <div class="drawer-cta">
+      <a href="#">Inscríbete</a>
+    </div>
+  </aside>
+
+  <main>
+ <!-- HERO: Carrusel + Tarjetas -->
+<section class="hero">
+  <div class="carousel" aria-label="Galería principal">
+    <button class="car-arrow car-prev" aria-label="Slide anterior">‹</button>
+
+<ul class="car-track">
+  <!-- Slide 1 -->
+  <li class="car-slide relative">
+    <img src="imagen 1.jpg"
+         alt="Foto de CAICTI"
+         class="absolute inset-0 w-full h-full object-cover select-none" />
+    <!-- overlay oscuro -->
+    <div class="absolute inset-0 bg-black/45 pointer-events-none"></div>
+  </li>
+
+  <!-- Slide 2 -->
+  <li class="car-slide relative">
+    <img src="imagen 1.jpg"
+         alt="Auditorio del congreso"
+         class="absolute inset-0 w-full h-full object-cover select-none" />
+    <div class="absolute inset-0 bg-black/45 pointer-events-none"></div>
+  </li>
+
+  <!-- Slide 3 -->
+  <li class="car-slide relative">
+    <img src="imagen 1.jpg"
+         alt="Ponente invitado"
+         class="absolute inset-0 w-full h-full object-cover select-none" />
+    <div class="absolute inset-0 bg-black/45 pointer-events-none"></div>
+  </li>
+</ul>
+
+    <button class="car-arrow car-next" aria-label="Siguiente slide">›</button>
+
+    <div class="car-dots" role="tablist" aria-label="Indicadores de carrusel"></div>
+  </div>
+
+  <!-- Tarjetas de acceso rápido (por ahora en blanco/destinos vacíos) -->
+  <div class="quick-cards">
+    <a class="qcard" href="#ejes-tematicos">
+      <div class="qicon" aria-hidden="true">🌐</div>
+      <div class="qcontent">
+        <h3>Info 1</h3>
+        <span class="qmore">Ver más</span>
+      </div>
+    </a>
+
+    <a class="qcard" href="#ods">
+      <div class="qicon" aria-hidden="true">📚</div>
+      <div class="qcontent">
+        <h3>Info 2</h3>
+        <span class="qmore">Ver más</span>
+      </div>
+    </a>
+
+    <a class="qcard" href="#inclusion">
+      <div class="qicon" aria-hidden="true">🧑‍🤝‍🧑</div>
+      <div class="qcontent">
+        <h3>Info 3</h3>
+        <span class="qmore">Ver más</span>
+      </div>
+    </a>
+
+    <a class="qcard" href="#destino-ingenieria">
+      <div class="qicon" aria-hidden="true">📍</div>
+      <div class="qcontent">
+        <h3>Info 4</h3>
+        <span class="qmore">Ver más</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Secciones de destino (por ahora en blanco) -->
+<section id="ejes-tematicos"></section>
+<section id="ods"></section>
+<section id="inclusion"></section>
+<section id="destino-ingenieria"></section>
+
+
+<section id="sobre-evento" class="section section--white about">
+  <div class="container narrow">
+    <h2 class="section-title"><span>Conoce sobre el evento</span></h2>
+
+    <img src="logo.png" alt="CAICTI" class="about-logo" />
+
+    <div class="about-text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+        ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna 
+        eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean 
+        sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue.
+       </p> 
+      <p>
+        Senectus et netus et malesuada. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Neque convallis a cras
+         semper auctor. Libero id faucibus nisl tincidunt eget. Leo a diam sollicitudin tempor id. A lacus vestibulum sed arcu
+          non odio euismod lacinia. In tellus integer feugiat scelerisque
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN: Qué te ofrece el Impact Science-->
+<section id="oferta" class="section section--white offer">
+  <div class="container narrow">
+    <h2 class="section-title"><span>Conoce sobre lo que te puede Impact Science</span></h2>
+
+    <div class="offer-grid">
+      <a class="offer-card " href="#">
+        <h3>1</h3>
+        <span class="more">Ver más</span>
+      </a>
+
+      <a class="offer-card" href="#">
+        <h3>2</h3>
+        <span class="more">Ver más</span>
+      </a>
+
+      <a class="offer-card" href="#">
+        <h3>3</h3>
+        <span class="more">Ver más</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="aliados" class="section section--white logos only-logos">
+  <div class="container">
+    <div class="logos-grid">
+      <a class="logo-item" href="#" aria-label="Aliado 1">
+        <img src="logo_unach.png" alt="Aliado 1">
+      </a>
+      <a class="logo-item" href="#" aria-label="Aliado 2">
+        <img src="logodsoftbanner.png" alt="Aliado 2">
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-top container">
+    <!-- Columna 1: Marca -->
+<div class="f-brand">
+  <div class="logo-box logo-md">
+    <img src="logo_oscuro-removebg-preview (1).png" alt="Impact Science">
+  </div>
+  <div class="logo-box logo-lg">
+    <img src="logo_unachenmovimientob.png" alt="UNACH">
+  </div>
+</div>
+
+    <!-- Columna 2: Aliados -->
+    <div class="f-col">
+      <h4>Aliados</h4>
+      <ul class="f-list">
+        <li><a href="#" target="_blank" rel="noopener">Universidad Nacional de Chimborazo</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Ingeniería UNACH</a></li>
+        <li><a href="#" target="_blank" rel="noopener"></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61551591911624" target="_blank" rel="noopener">D’Soft.Net</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Contacto -->
+    <div class="f-col">
+      <h4>Contacto</h4>
+      <ul class="f-list">
+        <li class="f-item">
+          <span class="f-ico" aria-hidden="true">📍</span>
+          Av. Antonio José de Sucre Km 1 1/2, camino a Guano — (RRPP) Velasco
+          <br/>Riobamba, Ecuador
+        </li>
+        <li class="f-item">
+            <!--<span class="f-ico" aria-hidden="true">✉️</span>
+          Columna 3: Contacto <a href="mailto:caicti@unach.edu.ec">caicti@unach.edu.ec</a>-->
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="f-sep" />
+
+  <div class="footer-bottom container">
+    <p class="f-copy">
+      Copyright ©2025 Todos los derechos reservados | Impact Science – UNACH |
+      Powered by <a href="https://www.facebook.com/profile.php?id=61551591911624" target="_blank" rel="noopener">D’Soft.Net</a>
+    </p>
+    <nav class="f-social" aria-label="Redes sociales">
+      <a href="#" aria-label="Facebook" class="s-btn">
+        <!-- ícono simple -->
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.4V12h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.5.7-1.5 1.4V12h2.6l-.4 2.9h-2.2v7A10 10 0 0 0 22 12z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram" class="s-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.4A5.6 5.6 0 1 1 6.4 13 5.6 5.6 0 0 1 12 7.4zm0 2A3.6 3.6 0 1 0 15.6 13 3.6 3.6 0 0 0 12 9.4zM18 6.8a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.8z"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter" class="s-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 5.9c-.7.3-1.4.5-2.1.6a3.6 3.6 0 0 0-6.1 3.3A10.2 10.2 0 0 1 3.2 5.2a3.6 3.6 0 0 0 1.1 4.8c-.6 0-1.1-.2-1.6-.4v.1a3.6 3.6 0 0 0 2.9 3.6 3.7 3.7 0 0 1-1.6.1 3.6 3.6 0 0 0 3.3 2.5A7.2 7.2 0 0 1 2 18.6a10.2 10.2 0 0 0 15.7-8.6v-.5c.7-.5 1.3-1.1 1.8-1.8z"/></svg>
+      </a>
+    </nav>
+  </div>
+</footer>
+
+
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+
+
+</html>
